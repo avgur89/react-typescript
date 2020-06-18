@@ -1,7 +1,12 @@
 // Core
 import React, { FC } from 'react';
+import { Provider } from 'react-redux';
 
-// Components
-import { Header } from './components/Header';
+// Store
+import { store } from './init/store';
 
-export const App: FC = () => <Header title="Welcome" />;
+export const App: FC = () => (
+  <Provider store={store}>
+
+  </Provider>
+);
